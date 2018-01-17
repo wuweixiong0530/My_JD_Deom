@@ -49,11 +49,11 @@
         <activity android:name=".activity.activity.CustomCaptrueActivity" />
         <activity android:name=".activity.activity.XiangQingActivity" />
         <activity android:name=".activity.activity.LoginActivity" />
-
         <activity android:name=".activity.activity.GeRenActivity" />
         <activity android:name=".activity.activity.ResActivity" />
         <activity android:name=".activity.activity.DingDanActivity" />
-        <activity android:name=".activity.activity.QueRenActivity"></activity>
+        <activity android:name=".activity.activity.QueRenActivity" />
+        <activity android:name=".activity.activity.GouWuCheActivity"></activity>
     </application>
 
 </manifest>

@@ -158,7 +158,7 @@ public class XiangQingActivity extends AppCompatActivity implements IXQView {
     }
     //购物车
     public void btn_Card(View view) {
-        Toast.makeText(XiangQingActivity.this, "开发中", Toast.LENGTH_SHORT).show();
-
+       Intent intent = new Intent(XiangQingActivity.this,GouWuCheActivity.class);
+       startActivity(intent);
     }
 }
