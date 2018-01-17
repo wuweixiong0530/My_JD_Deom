@@ -287,7 +287,7 @@ public class FragmentGouWu extends Fragment implements ICartView, IMiaoShaView {
             }
         }
 
-        return true;
+        return false;
     }
 
 //    //点击全选
