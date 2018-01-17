@@ -120,7 +120,7 @@ public class XiangQingActivity extends AppCompatActivity implements IXQView {
         sharedPreferences = getSharedPreferences("logins", MODE_PRIVATE);
         edit = sharedPreferences.edit();
         String uid = sharedPreferences.getString("uid", "");
-        Log.i("xiangqing", "uid+" + uid);
+        Log.i("xiangqng", "uid+" + uid);
         Map<String, String> map = new HashMap<>();
         map.put("uid", uid);//先传一个固定的id  看看对不对
         map.put("pid", pid);
