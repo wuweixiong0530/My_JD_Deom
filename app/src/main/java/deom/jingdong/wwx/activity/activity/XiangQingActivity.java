@@ -101,6 +101,16 @@ public class XiangQingActivity extends AppCompatActivity implements IXQView {
                         Glide.with(XiangQingActivity.this).load(imageList.get(position)).into((ImageView) view);
                     }
                 });
+                //点击xBanner
+                xBanner.setOnItemClickListener(new XBanner.OnItemClickListener() {
+                    @Override
+                    public void onItemClick(XBanner banner, int position) {
+                        Intent intent = new Intent(XiangQingActivity.this,ImageActivity.class);
+                        intent.putExtra("position",imageList.get(position));
+
+                        startActivity(intent);
+                    }
+                });
 
                 tv1.setText(xiangQingBean.getData().getTitle());
                 tv2.setText("原价" + xiangQingBean.getData().getBargainPrice());

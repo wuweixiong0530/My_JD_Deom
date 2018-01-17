@@ -53,7 +53,8 @@
         <activity android:name=".activity.activity.ResActivity" />
         <activity android:name=".activity.activity.DingDanActivity" />
         <activity android:name=".activity.activity.QueRenActivity" />
-        <activity android:name=".activity.activity.GouWuCheActivity"></activity>
+        <activity android:name=".activity.activity.GouWuCheActivity" />
+        <activity android:name=".activity.activity.ImageActivity"></activity>
     </application>
 
 </manifest>
