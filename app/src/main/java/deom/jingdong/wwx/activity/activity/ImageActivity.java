@@ -35,6 +35,7 @@ import utils.DoubleScaleImageView;
 public class ImageActivity extends AppCompatActivity {
 
     private ImageView imageView;
+
     private String position;
 
     @Override
@@ -49,12 +50,6 @@ public class ImageActivity extends AppCompatActivity {
         imageView = findViewById(R.id.imageView_iv);
         Glide.with(ImageActivity.this).load(position).into(imageView);
 
-        imageView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                finish();
-            }
-        });
 
 
     }

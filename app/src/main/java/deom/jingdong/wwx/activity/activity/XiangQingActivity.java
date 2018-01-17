@@ -107,7 +107,6 @@ public class XiangQingActivity extends AppCompatActivity implements IXQView {
                     public void onItemClick(XBanner banner, int position) {
                         Intent intent = new Intent(XiangQingActivity.this,ImageActivity.class);
                         intent.putExtra("position",imageList.get(position));
-
                         startActivity(intent);
                     }
                 });
