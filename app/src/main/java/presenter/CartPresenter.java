@@ -27,9 +27,13 @@ public class CartPresenter implements ICartPre{
         iCartView.onSuccess(cartBean);
     }
 
+    /**
+     * 解决内存泄漏
+     */
     public void destory() {
         if (iCartView!=null){
             iCartView=null;
         }
     }
+
 }
