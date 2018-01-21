@@ -45,7 +45,6 @@ public class XiangQingActivity extends AppCompatActivity implements IXQView {
     private XiangQingPresenter xiangQingPresenter;
     private List<String> imageList;
     private SharedPreferences sharedPreferences;
-    private SharedPreferences.Editor edit;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -127,7 +126,6 @@ public class XiangQingActivity extends AppCompatActivity implements IXQView {
      */
     public void btn_addCard(View view) {
         sharedPreferences = getSharedPreferences("logins", MODE_PRIVATE);
-        edit = sharedPreferences.edit();
         String uid = sharedPreferences.getString("uid", "");
         Log.i("xiangqing", "uid+" + uid);
         Map<String, String> map = new HashMap<>();
