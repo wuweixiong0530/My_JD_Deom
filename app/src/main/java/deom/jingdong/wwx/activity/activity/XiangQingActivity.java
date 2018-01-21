@@ -104,8 +104,8 @@ public class XiangQingActivity extends AppCompatActivity implements IXQView {
                 xBanner.setOnItemClickListener(new XBanner.OnItemClickListener() {
                     @Override
                     public void onItemClick(XBanner banner, int position) {
-                        Intent intent = new Intent(XiangQingActivity.this,ImageActivity.class);
-                        intent.putExtra("position",imageList.get(position));
+                        Intent intent = new Intent(XiangQingActivity.this, ImageActivity.class);
+                        intent.putExtra("position", imageList.get(position));
                         startActivity(intent);
                     }
                 });
@@ -163,9 +163,10 @@ public class XiangQingActivity extends AppCompatActivity implements IXQView {
             }
         });
     }
+
     //购物车
     public void btn_Card(View view) {
-       Intent intent = new Intent(XiangQingActivity.this,GouWuCheActivity.class);
-       startActivity(intent);
+        Intent intent = new Intent(XiangQingActivity.this, GouWuCheActivity.class);
+        startActivity(intent);
     }
 }
